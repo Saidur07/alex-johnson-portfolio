@@ -1,86 +1,55 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../../assets/images/aj.png";
+import CustomLink from "../Shared/CustomLink/CustomLink";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const navigation = [
+    { id: 1, name: "Home", to: "/" },
+    { id: 2, name: "Services", to: "/services" },
+    { id: 3, name: "Awards", to: "/awards" },
+    { id: 4, name: "Checkout", to: "/checkout" },
+    { id: 5, name: "Blogs", to: "/blogs" },
+    { id: 6, name: "About", to: "/about" },
+  ];
   return (
-    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 z-10 lg:px-8 md:sticky top-0 bg-indigo-50 rounded-xl">
+    <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 z-10 lg:px-4 md:sticky top-0 bg-indigo-50 rounded-xl">
       <div className="relative flex items-center justify-between">
-        <a
-          href="/"
+        <Link
+          to="/"
           aria-label="AJ"
           title="AJ"
-          className="inline-flex items-center"
+          className="inline-flex items-center w-1/12"
         >
-          <img src={logo} alt="" className="w-1/12 rounded-md" />
-          <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+          <img src={logo} alt="" className="md:w-24 w-16 rounded-xl" />
+          <span className="ml-4 text-xl font-bold tracking-wide text-gray-800 uppercase">
             Alex Johnson
           </span>
-        </a>
-        <ul className=" items-center hidden space-x-4 mr-8 lg:flex">
-          <li>
-            <a
-              href="/"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              aria-label="Our product"
-              title="Our product"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
-            >
-              Checkout
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              aria-label="Product pricing"
-              title="Product pricing"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
-            >
-              Blogs
-            </a>
-          </li>
-          <li>
-            <a
-              href="/"
-              aria-label="About us"
-              title="About us"
-              className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-400"
-            >
-              About
-            </a>
-          </li>
+        </Link>
+        <ul className=" items-center hidden space-x-8 mr-8 lg:flex">
+          {navigation.map((nav) => (
+            <li key={nav.id}>
+              <CustomLink
+                to={nav.to}
+                aria-label={nav.name}
+                title={nav.name}
+                className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600 active:scale-95"
+              >
+                {nav.name}
+              </CustomLink>
+            </li>
+          ))}
         </ul>
-        <ul className=" items-center hidden space-x-8 lg:flex">
+        <ul className=" items-center hidden space-x-2 lg:flex">
           <li>
-            <a
-              href="/"
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none"
-              aria-label="Log in"
-              title="Log in"
+            <Link
+              to={"/login"}
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
               Log in
-            </a>
+            </Link>
           </li>
         </ul>
         <div className="lg:hidden">
@@ -110,8 +79,8 @@ const Navbar = () => {
               <div className="p-5 bg-white border rounded shadow-sm">
                 <div className="flex items-center justify-between mb-4">
                   <div>
-                    <a
-                      href="/"
+                    <Link
+                      to="/"
                       aria-label="AJ"
                       title="AJ"
                       className="inline-flex items-center"
@@ -120,7 +89,7 @@ const Navbar = () => {
                       <span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                         Alex Johnson
                       </span>
-                    </a>
+                    </Link>
                   </div>
                   <div>
                     <button
@@ -140,55 +109,27 @@ const Navbar = () => {
                 </div>
                 <nav>
                   <ul className="space-y-4">
+                    {navigation.map((nav) => (
+                      <li key={nav.id}>
+                        <CustomLink
+                          to={nav.to}
+                          aria-label={nav.name}
+                          title={nav.name}
+                          className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-purple-600"
+                        >
+                          {nav.name}
+                        </CustomLink>
+                      </li>
+                    ))}
                     <li>
-                      <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Product
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Our product"
-                        title="Our product"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Features
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="Product pricing"
-                        title="Product pricing"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        Pricing
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
-                        aria-label="About us"
-                        title="About us"
-                        className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
-                      >
-                        About us
-                      </a>
-                    </li>
-                    <li>
-                      <a
-                        href="/"
+                      <Link
+                        to={"/login"}
                         className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-gray-500 focus:shadow-outline focus:outline-none"
                         aria-label="Log in"
                         title="Log in"
                       >
                         Log in
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </nav>

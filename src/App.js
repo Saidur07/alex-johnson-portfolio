@@ -1,20 +1,27 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Header from "./components/Header/Header";
-import Banner from "./components/Banner/Banner";
-import Services from "./components/Services/Services";
-import Awards from "./components/Awards/Awards";
 import Footer from "./components/Footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
+import NotFound from "./Pages/NotFound/NotFound";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
     <div>
       <Navbar></Navbar>
-      <Header></Header>
-      <Banner></Banner>
-      <Services></Services>
-      <Awards></Awards>
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/home" element={<Home></Home>}></Route>
+        <Route path="/login" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+      </Routes>
       <Footer></Footer>
+      <ToastContainer></ToastContainer>
     </div>
   );
 }

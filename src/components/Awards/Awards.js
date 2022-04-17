@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Awards = () => {
   return (
     <div className="px-4 pb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-24 md:px-8">
@@ -6,7 +8,7 @@ const Awards = () => {
           <div className="flex flex-col items-center px-0 sm:px-3">
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50">
               <div
-                class="radial-progress text-red-500"
+                className="radial-progress text-red-500"
                 style={{
                   "--value": "70",
                 }}
@@ -19,7 +21,7 @@ const Awards = () => {
             </div>
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-8">
               <div
-                class="radial-progress text-purple-600"
+                className="radial-progress text-purple-600"
                 style={{
                   "--value": "90",
                 }}
@@ -34,7 +36,7 @@ const Awards = () => {
           <div className="px-3">
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-12">
               <div
-                class="radial-progress text-yellow-300"
+                className="radial-progress text-yellow-300"
                 style={{
                   "--value": "80",
                 }}
@@ -47,7 +49,7 @@ const Awards = () => {
             </div>
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-6">
               <div
-                class="radial-progress text-green-300"
+                className="radial-progress text-green-300"
                 style={{
                   "--value": "60",
                 }}
@@ -80,10 +82,10 @@ const Awards = () => {
             </p>
           </div>
           <div>
-            <a
-              href="/"
+            <Link
+              to="/about"
               aria-label=""
-              className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
+              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
               Learn more
               <svg
@@ -93,7 +95,7 @@ const Awards = () => {
               >
                 <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z" />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

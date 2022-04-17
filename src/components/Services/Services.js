@@ -1,8 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Services = () => {
   return (
-    <div className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+    <div
+      className="px-4 py-8 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20"
+      id="services"
+    >
       <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
         <div>
           <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
@@ -43,106 +47,115 @@ const Services = () => {
         </p>
       </div>
       <div className="grid gap-5 mb-8 md:grid-cols-2">
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-          <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-            <svg
-              className="w-10 h-10 text-deep-purple-accent-400"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
+        <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
+          <img
+            className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
+            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Iure officia velit itaque esse
+              quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat,
+              dolorem vero impedit reiciendis ducimus possimus voluptate.
+            </p>
+            <Link
+              to={"/checkout"}
+              className="inline-flex items-center justify-center h-12 mt-4 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+              Checkout
+            </Link>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Those options</h6>
-          <p className="text-sm text-gray-900">
-            Strategic high-level 30,000 ft view. Drill down re-inventing the
-            wheel at the end of the day but curate imagineer, or to be inspired
-            is to become creative.
-          </p>
         </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-          <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-            <svg
-              className="w-10 h-10 text-deep-purple-accent-400"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
+
+        <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
+          <img
+            className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
+            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Iure officia velit itaque esse
+              quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat,
+              dolorem vero impedit reiciendis ducimus possimus voluptate.
+            </p>
+            <Link
+              to={"/checkout"}
+              className="inline-flex items-center justify-center h-12 mt-4 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+              Checkout
+            </Link>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Swearem ipsum</h6>
-          <p className="text-sm text-gray-900">
-            Aliquam scelerisque accumsan nisl, a mattis eros vestibulum et.
-            Vestibulum placerat purus ut nibh aliquam fringilla. Aenean et
-            tortor diam, id tempor elit.
-          </p>
         </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-          <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-            <svg
-              className="w-10 h-10 text-deep-purple-accent-400"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
+        <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
+          <img
+            className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
+            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Iure officia velit itaque esse
+              quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat,
+              dolorem vero impedit reiciendis ducimus possimus voluptate.
+            </p>
+            <Link
+              to={"/checkout"}
+              className="inline-flex items-center justify-center h-12 mt-4 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+              Checkout
+            </Link>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Webtwo ipsum</h6>
-          <p className="text-sm text-gray-900">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque rem aperiam, eaque ipsa quae. Sed ut
-            perspiciatis unde omnis.
-          </p>
         </div>
-        <div className="p-5 duration-300 transform bg-white border rounded shadow-sm hover:-translate-y-2">
-          <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-indigo-50">
-            <svg
-              className="w-10 h-10 text-deep-purple-accent-400"
-              stroke="currentColor"
-              viewBox="0 0 52 52"
+        <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
+          <img
+            className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
+            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            alt=""
+          />
+          <div className="flex flex-col justify-between p-4 leading-normal">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Noteworthy technology acquisitions 2021
+            </h5>
+            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              Here are the biggest enterprise technology acquisitions of 2021 so
+              far, in reverse chronological order. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Iure officia velit itaque esse
+              quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat,
+              dolorem vero impedit reiciendis ducimus possimus voluptate.
+            </p>
+            <Link
+              to={"/checkout"}
+              className="inline-flex items-center justify-center h-12 mt-4 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
             >
-              <polygon
-                strokeWidth="3"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                fill="none"
-                points="29 13 14 29 25 29 23 39 38 23 27 23"
-              />
-            </svg>
+              Checkout
+            </Link>
           </div>
-          <h6 className="mb-2 font-semibold leading-5">Lookout flogging</h6>
-          <p className="text-sm text-gray-900">
-            Flatland! Hypatia. Galaxies Orion's sword globular star cluster?
-            Light years quasar as a patch of light gathered by gravity Vangelis
-            radio telescope.
-          </p>
         </div>
       </div>
       <div className="text-center">
-        <a
-          href="/"
-          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md md:w-auto bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+        <Link
+          to="/about"
+          className="inline-flex items-center justify-center h-12 mt-4 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
         >
           Learn more
-        </a>
+        </Link>
       </div>
     </div>
   );

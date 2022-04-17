@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import person from "../../assets/images/person.png";
 
 const Header = () => {
@@ -23,19 +24,12 @@ const Header = () => {
           </p>
         </div>
         <div className="flex items-center">
-          <a
-            href="/"
-            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-black transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
           >
-            Get started
-          </a>
-          <a
-            href="/"
-            aria-label=""
-            className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-          >
-            Learn more
-          </a>
+            Know More
+          </Link>
         </div>
       </div>
       <div className="md:pt-12 pt-0">
