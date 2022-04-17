@@ -1,40 +1,35 @@
 import React from "react";
-import "./Banner.css";
-const Box = () => {
+const Banner = () => {
   return (
-    <div className="Banner">
-      <div className="banner-section">
-        <div className="box">
-          <div className="box1">
-            <h2>1+</h2>
-          </div>
-          <br />
-          <p>Years Experience</p>
+    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4">
+        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">144K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Downloads
+          </p>
         </div>
-        <div className="box">
-          <div className="box2">
-            <h2>100%</h2>
-          </div>
-          <br />
-          <p>Satisfaction</p>
+        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">12.9K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Subscribers
+          </p>
         </div>
-        <div className="box">
-          <div className="box3">
-            <h2>10+</h2>
-          </div>
-          <br />
-          <p>Projects</p>
+        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">48.3K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Users
+          </p>
         </div>
-        <div className="box">
-          <div className="box4">
-            <h2>20k+</h2>
-          </div>
-          <br />
-          <p>Lines of Code</p>
+        <div className="text-center border-b pb-3 mx-2 md:border-b-0 md:mx-0  ">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">24.5K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Cookies
+          </p>
         </div>
       </div>
     </div>
   );
 };
 
-export default Box;
+export default Banner;

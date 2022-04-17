@@ -1,6 +1,6 @@
 .Banner {
   width: 100vw;
-  min-height: 18vh;
+  height: 15vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -14,10 +14,10 @@
 
 .Banner .banner-section {
   width: 60%;
-  height: 90%;
+  height: 80%;
   border-radius: 20px;
-  padding: 20px;
-  background: #ecf0ee;
+  padding: 10px;
+  background: #f9fbfa;
   -webkit-box-shadow: -1px 0px 20px 0px #e0e0e0;
           box-shadow: -1px 0px 20px 0px #e0e0e0;
   display: -webkit-box;
@@ -42,45 +42,49 @@
 .Banner .banner-section .box .box1 {
   background: #ff99f1;
   background: linear-gradient(230deg, #ff99f1 33%, #94e9e4 83%);
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 65px;
+  line-height: 50px;
+  margin-bottom: 10px;
 }
 
 .Banner .banner-section .box .box2 {
   background: #99eaff;
   background: linear-gradient(130deg, #99eaff 33%, #ad94e9 83%);
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 65px;
+  line-height: 50px;
+  margin-bottom: 10px;
 }
 
 .Banner .banner-section .box .box3 {
   background: #ff99ea;
-  background: linear-gradient(330deg, #ff5b87 33%, #94e9db 83%);
-  width: 65px;
-  height: 65px;
+  background: linear-gradient(330deg, #ff5b87 33%, #94e9db 63%);
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 65px;
+  line-height: 50px;
+  margin-bottom: 10px;
 }
 
 .Banner .banner-section .box .box4 {
   background: #ffd899;
   background: linear-gradient(225deg, #ffd899 33%, #9497e9 83%);
-  width: 65px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   color: white;
   text-align: center;
-  line-height: 65px;
+  line-height: 50px;
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
