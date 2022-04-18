@@ -18,8 +18,8 @@ In the website, you can see:
 
 ### Technologies used in this website
 
-- `React.js`
+- `React.js` , `React Router`, `React Toastify`
 
-- `Firebase`
+- `Firebase` , `React router hooks`
 
 - `Tailwind css` , `DaisyUi` and `Flowbite`

@@ -1,8 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 import graphic from "../../assets/images/graphic.jpg";
 const Checkout = () => {
   const formSubmit = (e) => {
     e.preventDefault();
+    toast.success("Thanks! Your Informations recorded!");
   };
   return (
     <div>
