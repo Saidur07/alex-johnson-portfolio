@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../../components/Header/Header";
-import Banner from "../../components/Banner/Banner";
+import Header from "../../components/Banner/Banner";
+import Banner from "../../components/Stats/States";
 import Services from "../../components/Services/Services";
 import Skills from "../../components/Skills/Skills";
 

@@ -1,35 +1,45 @@
 import React from "react";
-const Banner = () => {
+import { Link } from "react-router-dom";
+import person from "../../assets/images/person.png";
+
+const Header = () => {
   return (
-    <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-      <div className="grid grid-cols-2 row-gap-8 md:grid-cols-4">
-        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">144K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Users
+    <div className="main flex flex-col justify-between max-w-xl px-4 mx-auto lg:pt-16 lg:flex-row md:px-8 lg:max-w-screen-xl md:mb-24">
+      <div className="pt-16 mb-16 lg:mb-0 lg:pt-32 lg:max-w-lg lg:pr-5">
+        <div className="max-w-xl mb-6">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+            Alex Johnson
+            <br />
+            <span className="text-lg sm:text-xl tracking-wide font-mono font-semibold">
+              Teacher| Designer | Programmer
+            </span>
+          </h2>
+          <p className="text-base text-gray-700 md:text-lg">
+            Alex Johnson is a online teacher. He teaches about Graphic
+            designing, Video Editing, Games Development, App Development etc. He
+            is loved by his students. He is Currently 45. He completed his MA in
+            Computer Science and Engineering from Harvard. He have a 10 years +
+            Experience of teaching.
           </p>
         </div>
-        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">72.9K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Students
-          </p>
+        <div className="flex items-center">
+          <Link
+            to="/"
+            className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
+          >
+            Know More
+          </Link>
         </div>
-        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">60K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Succesful Students
-          </p>
-        </div>
-        <div className="text-center border-b pb-3 mx-2 md:border-b-0 md:mx-0  ">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">5K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Reviews
-          </p>
-        </div>
+      </div>
+      <div className="md:pt-12 pt-0">
+        <img
+          src={person}
+          className=" w-2/3 md:w-full lg:animate-wiggle rounded-lg  mx-auto xl:mr-24 md:max-w-sm"
+          alt=""
+        />
       </div>
     </div>
   );
 };
 
-export default Banner;
+export default Header;
