@@ -4,11 +4,10 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   const navigation = [
     { id: 1, name: "Home", to: "/" },
-    { id: 2, name: "Services", to: "/" },
-    { id: 3, name: "Awards", to: "/" },
-    { id: 4, name: "Checkout", to: "/" },
-    { id: 5, name: "Blogs", to: "/" },
-    { id: 6, name: "About", to: "/" },
+    { id: 2, name: "Services", to: "/services" },
+    { id: 3, name: "Checkout", to: "/checkout" },
+    { id: 4, name: "Blogs", to: "/blogs" },
+    { id: 5, name: "About", to: "/about" },
   ];
   return (
     <div>
@@ -60,7 +59,7 @@ const Footer = () => {
             </Link>
             <Link
               to="https://www.facebook.com"
-              className="hover:scale-90 transition-all hover:text-indigo-700"
+              className="hover:scale-90 transition-all hover:text-blue-700"
               target="_blank"
               rel="noreferrer"
             >

@@ -3,7 +3,7 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loader from "../../components/Shared/Loader/Loader";
 import Social from "../../components/Shared/SocialSignIn/Social";
@@ -15,7 +15,9 @@ const Register = () => {
       sendEmailVerification: true,
     });
   const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+  const location = useLocation();
   const navigate = useNavigate();
+  let from = location.state?.from?.pathname || "/";
 
   const handleRegister = async (e) => {
     e.preventDefault();
@@ -26,21 +28,19 @@ const Register = () => {
       toast.warning("Passwords needs at least 6 characters");
       return;
     }
-
     if (error || updateError) {
       toast.error("ERROR : ", error?.code || updateError?.code);
-    }
-    toast.success("Verfication email Sent!");
-    toast.info(
-      "Go to your Gmail, then click on the link of the email that we sent to you. Then Login"
-    );
-
-    await createUserWithEmailAndPassword(email, password);
-    if (!user?.user?.emailVerified) {
       return;
     }
+    await createUserWithEmailAndPassword(email, password);
     await updateProfile({ displayName: name });
+    toast.success("Verfication email Sent!");
+    toast.info(
+      "Go to your Gmail, then click on the link of the email that we sent to you. then login"
+    );
+
     navigate("/login");
+    // navigate(from, { replace: true });
   };
 
   if (user) {

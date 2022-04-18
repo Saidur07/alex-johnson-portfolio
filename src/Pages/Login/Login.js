@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import {
   useSendPasswordResetEmail,
   useSignInWithEmailAndPassword,
@@ -26,8 +26,14 @@ const Login = () => {
 
     signInWithEmailAndPassword(email, password);
   };
+
   if (user) {
-    navigate(from, { replace: true });
+    if (user.user.emailVerified) {
+      navigate(from, { replace: true });
+    }
+    if (!user.user.emailVerified) {
+      toast.warning("Please verify your email first!");
+    }
   }
   if (error) {
     toast.error(`ERROR : ${error}`);

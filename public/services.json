@@ -1,0 +1,62 @@
+[
+    {   "id" : 1,
+        "title" : "Graphic Designing Course",
+        "description" : "Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.",
+        "price" : 120,
+        "img" : "https://i.pinimg.com/236x/20/9f/be/209fbe1e9e75abc24c6e2e51b22440ed--graphic-art-graphic-studio.jpg"
+    },
+    {   "id" : 2,
+        "title" : "Video Editing",
+        "description" : "Video editing is the process of editing segments of motion video production footage, special effects and sound recordings in the post-production process. Motion picture film editing is a predecessor to video editing and, in several ways, video editing simulates motion picture film editing, in theory and the use of linear video editing and video editing software on non-linear editing systems (NLE). Using video, a director can communicate non-fictional and fictional events. The goal of editing is to manipulate these events to bring the communication closer to the original goal or target. It is a visual art",
+        "price" : 150,
+        "img" : "https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBlZGl0aW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+    },
+    {   "id" : 3,
+        "title" : "Digital Marketing",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 170,
+        "img" : "https://www.lcmtlondon.com/wp-content/uploads/2020/03/digital-marketting.jpg"
+    },
+    {   "id" : 4,
+        "title" : "Game Development",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 200,
+        "img" : "https://media.istockphoto.com/vectors/game-dev-isometric-concept-education-of-creation-3d-design-of-or-vector-id1297564630?k=20&m=1297564630&s=612x612&w=0&h=QenkclbeLXqD7NHYdVoBrm3_T4u16fg86CTGMNGdSHQ="
+    },
+    {   "id" : 5,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {   "id" : 6,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {   "id" : 7,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {   "id" : 8,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {   "id" : 9,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    },
+    {   "id" : 9,
+        "title" : "Noteworthy technology acquisitions 2021",
+        "description" : "Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure officia velit itaque esse quaerat, aliquam ad enim dolor ullam at fugit dolore fugiat, dolorem vero impedit reiciendis ducimus possimus voluptate.",
+        "price" : 120,
+        "img" : "https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+    }
+]

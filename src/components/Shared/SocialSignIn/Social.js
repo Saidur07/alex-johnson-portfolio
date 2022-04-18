@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import google from "../../../assets/images/google.png";
 import facebook from "../../../assets/images/facebook.png";
 import github from "../../../assets/images/github.png";
@@ -27,9 +27,11 @@ const Social = () => {
       `ERROR : ${googleError?.code || FacebookError?.code || githubError?.code}`
     );
   }
-  if (googleUser || FacebookUser || githubUser) {
-    navigate(from, { replace: true });
-  }
+  useEffect(() => {
+    if (googleUser || FacebookUser || githubUser) {
+      navigate(from, { replace: true });
+    }
+  }, [googleUser, FacebookUser, githubUser, navigate, from]);
   return (
     <div className="container lg:w-1/3 mx-auto my-6">
       <div className="flex justify-center items-center">

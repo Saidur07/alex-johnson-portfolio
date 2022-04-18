@@ -8,19 +8,18 @@ const Header = () => {
       <div className="pt-16 mb-16 lg:mb-0 lg:pt-32 lg:max-w-lg lg:pr-5">
         <div className="max-w-xl mb-6">
           <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-            The quick, brown fox
-            <br className="hidden md:block" />
-            jumps over{" "}
-            <span className="inline-block text-deep-purple-accent-400">
-              a lazy dog
+            Alex Johnson
+            <br />
+            <span className="text-lg sm:text-xl tracking-wide font-mono font-semibold">
+              Teacher| Designer | Programmer
             </span>
           </h2>
           <p className="text-base text-gray-700 md:text-lg">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae. explicabo. Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Nemo quia vero harum inventore tempore, quam ipsum amet! Quo,
-            adipisci.
+            Alex Johnson is a online teacher. He teaches about Graphic
+            designing, Video Editing, Games Development, App Development etc. He
+            is loved by his students. He is Currently 45. He completed his MA in
+            Computer Science and Engineering from Harvard. He have a 10 years +
+            Experience of teaching.
           </p>
         </div>
         <div className="flex items-center">

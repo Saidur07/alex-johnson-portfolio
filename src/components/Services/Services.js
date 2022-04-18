@@ -32,20 +32,19 @@ const Services = () => {
                 height="24"
               />
             </svg>
-            <span className="relative">The</span>
+            <span className="relative">Services</span>
           </span>{" "}
-          quick, brown fox jumps over a lazy dog
+          from Alex Johnson
         </h2>
         <p className="text-base text-gray-700 md:text-lg">
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-          accusantium doloremque rem aperiam, eaque ipsa quae.
+          Alex Johnson provides various courses. Here are some of them :
         </p>
       </div>
       <div className="grid gap-5 mb-8 md:grid-cols-2">
         <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
           <img
             className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
-            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            src="https://i.pinimg.com/236x/20/9f/be/209fbe1e9e75abc24c6e2e51b22440ed--graphic-art-graphic-studio.jpg"
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
@@ -71,7 +70,7 @@ const Services = () => {
         <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
           <img
             className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
-            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            src="https://images.unsplash.com/photo-1574717025058-2f8737d2e2b7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBlZGl0aW5nfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
@@ -96,7 +95,7 @@ const Services = () => {
         <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
           <img
             className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
-            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            src="https://www.lcmtlondon.com/wp-content/uploads/2020/03/digital-marketting.jpg"
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">
@@ -121,7 +120,7 @@ const Services = () => {
         <div className="flex flex-col items-center bg-white rounded-lg border shadow-md md:flex-row md:max-w-xl hover:bg-gray-100 hover:-rotate-1 hover:shadow-stone-300 transition-all">
           <img
             className="object-cover w-full h-full rounded-t-lg md:h-auto md:w-48 md:rounded-none md:rounded-l-lg mx-2"
-            src="https://images.unsplash.com/photo-1580910051074-3eb694886505?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bW9iaWxlJTIwcGhvbmV8ZW58MHx8MHx8&w=1000&q=80"
+            src="https://media.istockphoto.com/vectors/game-dev-isometric-concept-education-of-creation-3d-design-of-or-vector-id1297564630?k=20&m=1297564630&s=612x612&w=0&h=QenkclbeLXqD7NHYdVoBrm3_T4u16fg86CTGMNGdSHQ="
             alt=""
           />
           <div className="flex flex-col justify-between p-4 leading-normal">

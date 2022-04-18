@@ -6,25 +6,25 @@ const Banner = () => {
         <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
           <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">144K</h6>
           <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Downloads
-          </p>
-        </div>
-        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">12.9K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Subscribers
-          </p>
-        </div>
-        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">48.3K</h6>
-          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
             Users
           </p>
         </div>
-        <div className="text-center border-b pb-3 mx-2 md:border-b-0 md:mx-0  ">
-          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">24.5K</h6>
+        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">72.9K</h6>
           <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
-            Cookies
+            Students
+          </p>
+        </div>
+        <div className="text-center border-b  pb-3 mx-2 md:border-b-0 md:mx-0  md:border-r">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">60K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Succesful Students
+          </p>
+        </div>
+        <div className="text-center border-b pb-3 mx-2 md:border-b-0 md:mx-0  ">
+          <h6 className="text-4xl font-bold lg:text-5xl xl:text-6xl">5K</h6>
+          <p className="text-sm font-medium tracking-widest text-gray-800 uppercase lg:text-base">
+            Reviews
           </p>
         </div>
       </div>

@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
 
-const Awards = () => {
+const Skills = () => {
   return (
-    <div
-      className="px-4 pb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-24 md:px-8"
-      id="awards"
-    >
+    <div className="px-4 pb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-24 md:px-8">
       <div className="grid gap-x-28 gap-y-8 lg:grid-cols-2">
         <div className="flex items-center justify-center md:pl-12">
           <div className="flex flex-col items-center px-0 sm:px-3">
@@ -24,7 +21,7 @@ const Awards = () => {
             </div>
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-8">
               <div
-                className="radial-progress text-purple-600"
+                className="radial-progress text-sky-400"
                 style={{
                   "--value": "90",
                 }}
@@ -39,7 +36,7 @@ const Awards = () => {
           <div className="px-3">
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-12">
               <div
-                className="radial-progress text-yellow-300"
+                className="radial-progress text-amber-300"
                 style={{
                   "--value": "80",
                 }}
@@ -52,7 +49,7 @@ const Awards = () => {
             </div>
             <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-6">
               <div
-                className="radial-progress text-green-300"
+                className="radial-progress text-emerald-400"
                 style={{
                   "--value": "60",
                 }}
@@ -67,21 +64,18 @@ const Awards = () => {
         </div>
         <div className="flex flex-col justify-center md:mx-auto md:max-w-lg">
           <div className="flex items-center justify-center w-36 h-6 mb-4 rounded-full bg-teal-accent-400">
-            <h2 className="text-xl text-gray-500 text-center">My Awards</h2>
+            <h2 className="text-xl text-gray-500 text-center">My Skills</h2>
           </div>
           <div className="max-w-xl mb-6">
             <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
-              Let us handle
-              <br className="hidden md:block" />
-              your next{" "}
+              Skills of{" "}
               <span className="inline-block text-deep-purple-accent-400">
-                destination
+                Alex Johnson
               </span>
             </h2>
             <p className="text-base text-gray-700 md:text-xl">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae. explicabo.
+              Alex Johnson is a specialist of Graphic designing, Video Editing,
+              Games Development, App Development etc.
             </p>
           </div>
           <div>
@@ -106,4 +100,4 @@ const Awards = () => {
   );
 };
 
-export default Awards;
+export default Skills;

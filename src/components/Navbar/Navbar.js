@@ -17,9 +17,11 @@ const Navbar = () => {
     { id: 5, name: "About", to: "/about" },
   ];
   const [user] = useAuthState(auth);
+  console.log(user);
   const handleSignOut = () => {
     signOut(auth);
   };
+
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 z-10 lg:px-4 md:sticky top-0 bg-indigo-50 rounded-xl">
       <div className="relative flex items-center justify-between">
@@ -52,7 +54,7 @@ const Navbar = () => {
           <li>
             {user ? (
               <img
-                src={user?.photoURL}
+                src={user.photoURL}
                 className="w-8 rounded-2xl mr-1"
                 alt=""
               />
@@ -62,8 +64,7 @@ const Navbar = () => {
           </li>
           <li>
             <p className="text-xl font-medium mr-2">
-              {" "}
-              {user ? user?.displayName : ""}
+              {user ? user.displayName : ""}
             </p>
           </li>
           <li>
