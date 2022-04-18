@@ -3,17 +3,23 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../assets/images/aj.png";
 import CustomLink from "../Shared/CustomLink/CustomLink";
+import { useAuthState } from "react-firebase-hooks/auth";
+import auth from "../../firebase.init";
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const navigation = [
     { id: 1, name: "Home", to: "/" },
     { id: 2, name: "Services", to: "/services" },
-    { id: 3, name: "Awards", to: "/awards" },
-    { id: 4, name: "Checkout", to: "/checkout" },
-    { id: 5, name: "Blogs", to: "/blogs" },
-    { id: 6, name: "About", to: "/about" },
+    { id: 3, name: "Checkout", to: "/checkout" },
+    { id: 4, name: "Blogs", to: "/blogs" },
+    { id: 5, name: "About", to: "/about" },
   ];
+  const [user] = useAuthState(auth);
+  const handleSignOut = () => {
+    signOut(auth);
+  };
   return (
     <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-20 z-10 lg:px-4 md:sticky top-0 bg-indigo-50 rounded-xl">
       <div className="relative flex items-center justify-between">
@@ -44,12 +50,40 @@ const Navbar = () => {
         </ul>
         <ul className=" items-center hidden space-x-2 lg:flex">
           <li>
-            <Link
-              to={"/login"}
-              className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
-            >
-              Log in
-            </Link>
+            {user ? (
+              <img
+                src={user?.photoURL}
+                className="w-8 rounded-2xl mr-1"
+                alt=""
+              />
+            ) : (
+              ""
+            )}
+          </li>
+          <li>
+            <p className="text-xl font-medium mr-2">
+              {" "}
+              {user ? user?.displayName : ""}
+            </p>
+          </li>
+          <li>
+            {user ? (
+              <button
+                onClick={handleSignOut}
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
+              >
+                {" "}
+                Log Out
+              </button>
+            ) : (
+              <Link
+                to={"/login"}
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-700 hover:bg-gray-600 focus:shadow-outline focus:outline-none active:scale-90"
+              >
+                {" "}
+                Log In
+              </Link>
+            )}
           </li>
         </ul>
         <div className="lg:hidden">
@@ -121,15 +155,37 @@ const Navbar = () => {
                         </CustomLink>
                       </li>
                     ))}
+                    <li className="">
+                      {user ? (
+                        <img
+                          src={user.photoURL}
+                          className="w-8 rounded-2xl mr-1 ml-8 mb-4"
+                          alt=""
+                        />
+                      ) : (
+                        ""
+                      )}
+                      <p className="text-xl font-medium mr-2">
+                        {" "}
+                        {user ? user.displayName : ""}
+                      </p>
+                    </li>
                     <li>
-                      <Link
-                        to={"/login"}
-                        className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-gray-500 focus:shadow-outline focus:outline-none"
-                        aria-label="Log in"
-                        title="Log in"
-                      >
-                        Log in
-                      </Link>
+                      {user ? (
+                        <button
+                          onClick={handleSignOut}
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-gray-500 focus:shadow-outline focus:outline-none"
+                        >
+                          Log Out
+                        </button>
+                      ) : (
+                        <Link
+                          to={"/login"}
+                          className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-gray-600 hover:bg-gray-500 focus:shadow-outline focus:outline-none"
+                        >
+                          Log in
+                        </Link>
+                      )}
                     </li>
                   </ul>
                 </nav>

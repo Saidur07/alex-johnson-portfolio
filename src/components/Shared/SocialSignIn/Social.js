@@ -31,11 +31,17 @@ const Social = () => {
     navigate(from, { replace: true });
   }
   return (
-    <div className="container w-1/3 mx-auto my-6">
+    <div className="container lg:w-1/3 mx-auto my-6">
       <div className="flex justify-center items-center">
-        <div style={{ height: "1px" }} className="bg-slate-500 w-1/2"></div>
-        <p className="mt-2 px-2 text-xl">or</p>
-        <div style={{ height: "1px" }} className="bg-slate-500 w-1/2"></div>
+        <div
+          style={{ height: "1px" }}
+          className="bg-slate-500 w-3/4 md:w-1/2 sm:w-1/3"
+        ></div>
+        <p className="px-2 text-xl">or</p>
+        <div
+          style={{ height: "1px" }}
+          className="bg-slate-500 w-3/4 md:w-1/2 sm:w-1/3"
+        ></div>
       </div>
       {googleLoading || FacebookLoading || githubLoading ? (
         <Loader></Loader>
@@ -46,7 +52,7 @@ const Social = () => {
       <div className="">
         <button
           onClick={() => signInWithGoogle()}
-          className=" bg-gray-100 hover:bg-gray-200 transition-all rounded-xl w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
+          className=" bg-gray-100 hover:bg-gray-200 transition-all rounded-xl w-4/5 md:w-4/6 xl:w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
         >
           <img style={{ width: "30px" }} src={google} alt="" />
           <span className="px-2 text-lg font-semibold text-slate-700">
@@ -55,7 +61,7 @@ const Social = () => {
         </button>
         <button
           onClick={() => signInWithFacebook()}
-          className=" bg-blue-400 hover:bg-blue-300 transition-all rounded-xl w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
+          className=" bg-blue-400 hover:bg-blue-300 transition-all rounded-xl w-4/5 md:w-4/6 xl:w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
         >
           <img style={{ width: "30px" }} src={facebook} alt="" />
           <span className="px-2 text-lg font-semibold text-slate-700">
@@ -64,7 +70,7 @@ const Social = () => {
         </button>
         <button
           onClick={() => signInWithGithub()}
-          className=" bg-slate-300 hover:bg-slate-200 transition-all rounded-xl w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
+          className=" bg-slate-300 hover:bg-slate-200 transition-all rounded-xl w-4/5 md:w-4/6 xl:w-1/2 flex justify-center items-center h-12 mx-auto my-8 "
         >
           <img style={{ width: "30px" }} src={github} alt="" />
           <span className="px-2 text-lg font-semibold text-slate-700">

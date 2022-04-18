@@ -17,8 +17,11 @@ const NotFound = () => {
       </h4>
       <h5 className="md:text-4xl text-3xl text-center text-zinc-500 my-6">
         But ! You Have an option to revive yourself from here{" "}
-        <span className="text-6xl text-cyan-400 font-serif">Yet! 🤫🤫</span>
+        <span className="text-4xl md:text-6xl text-cyan-400 font-serif">
+          Yet! 🤫🤫
+        </span>
       </h5>
+      <br />
       <div className="flex justify-center items-center">
         <Link
           to={"/"}

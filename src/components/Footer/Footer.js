@@ -12,7 +12,7 @@ const Footer = () => {
   ];
   return (
     <div>
-      <footer className="footer footer-center p-10 bg-indigo-50 text-base-content rounded mt-12">
+      <footer className="footer footer-center p-10 bg-indigo-50 text-base-content rounded  md:mt-12">
         <div className="grid grid-cols-3 gap-4 sm:grid-flow-col">
           {navigation.map((nav) => (
             <Link

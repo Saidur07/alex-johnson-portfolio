@@ -2,11 +2,14 @@ import { Link } from "react-router-dom";
 
 const Awards = () => {
   return (
-    <div className="px-4 pb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-24 md:px-8">
+    <div
+      className="px-4 pb-24 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl lg:px-24 md:px-8"
+      id="awards"
+    >
       <div className="grid gap-x-28 gap-y-8 lg:grid-cols-2">
         <div className="flex items-center justify-center md:pl-12">
           <div className="flex flex-col items-center px-0 sm:px-3">
-            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50">
+            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50">
               <div
                 className="radial-progress text-red-500"
                 style={{
@@ -19,7 +22,7 @@ const Awards = () => {
                 Graphic Design
               </h1>
             </div>
-            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-8">
+            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-8">
               <div
                 className="radial-progress text-purple-600"
                 style={{
@@ -34,7 +37,7 @@ const Awards = () => {
             </div>
           </div>
           <div className="px-3">
-            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-12">
+            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-12">
               <div
                 className="radial-progress text-yellow-300"
                 style={{
@@ -47,7 +50,7 @@ const Awards = () => {
                 Branding Design
               </h1>
             </div>
-            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-indigo-50 mt-6">
+            <div className="w-32 h-44 p-2 sm:w-44 sm:h-44  hover:scale-110 transition duration-300 linear md:w-60 md:h-60 rounded-md md:rounded-2xl flex justify-center items-center flex-col bg-gray-50 mt-6">
               <div
                 className="radial-progress text-green-300"
                 style={{

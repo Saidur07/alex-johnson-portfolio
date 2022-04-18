@@ -3,37 +3,60 @@ import {
   useCreateUserWithEmailAndPassword,
   useUpdateProfile,
 } from "react-firebase-hooks/auth";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 import Loader from "../../components/Shared/Loader/Loader";
 import Social from "../../components/Shared/SocialSignIn/Social";
 import auth from "../../firebase.init";
 
 const Register = () => {
   const [createUserWithEmailAndPassword, user, loading, error] =
-    useCreateUserWithEmailAndPassword(auth);
-  const [updateProfile, updating, updateError] = useUpdateProfile(auth, {
-    sendEmailVerification: true,
-  });
+    useCreateUserWithEmailAndPassword(auth, {
+      sendEmailVerification: true,
+    });
+  const [updateProfile, updating, updateError] = useUpdateProfile(auth);
+  const navigate = useNavigate();
 
-  const handleRegister = (e) => {
+  const handleRegister = async (e) => {
     e.preventDefault();
     const name = e.target.name.value;
     const email = e.target.email.value;
     const password = e.target.password.value;
-    updateProfile({ displayName: name });
-    createUserWithEmailAndPassword(email, password);
+    if (password.length < 6) {
+      toast.warning("Passwords needs at least 6 characters");
+      return;
+    }
+
+    if (error || updateError) {
+      toast.error("ERROR : ", error?.code || updateError?.code);
+    }
+    toast.success("Verfication email Sent!");
+    toast.info(
+      "Go to your Gmail, then click on the link of the email that we sent to you. Then Login"
+    );
+
+    await createUserWithEmailAndPassword(email, password);
+    if (!user?.user?.emailVerified) {
+      return;
+    }
+    await updateProfile({ displayName: name });
+    navigate("/login");
   };
+
   if (user) {
     console.log(user);
   }
   return (
     <div>
-      <h1 className="text-5xl text-center my-8 text-gray-700">
+      <h1 className="md:text-5xl text-3xl text-center my-8 text-gray-700">
         HEY! REGISTER!!
       </h1>
-      <hr className="container mx-auto w-1/4" />
-      <form onSubmit={handleRegister} className="container mx-auto w-1/4 mt-8">
-        <div className="mb-6">
+      <hr className="container mx-auto w-1/2 md:w-1/4" />
+      <form
+        onSubmit={handleRegister}
+        className="container mx-auto md:w-1/4 mt-8"
+      >
+        <div className="mb-6 w-3/4 mx-auto md:w-full ">
           <label
             htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-900 "
@@ -48,7 +71,7 @@ const Register = () => {
             required
           />
         </div>
-        <div className="mb-6">
+        <div className="mb-6 w-3/4 mx-auto md:w-full ">
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900"
@@ -63,7 +86,7 @@ const Register = () => {
             required
           />
         </div>
-        <div className="mb-6">
+        <div className="mb-6 w-3/4 mx-auto md:w-full ">
           <label
             htmlFor="password"
             className="block mb-2 text-sm font-medium text-gray-900"
@@ -79,7 +102,7 @@ const Register = () => {
           />
         </div>
 
-        <div className="flex items-start mb-6">
+        <div className="flex items-start mb-6  w-3/4 mx-auto md:w-full">
           <div className="flex items-center h-5">
             <input
               id="terms"
@@ -98,7 +121,7 @@ const Register = () => {
             </label>
           </div>
         </div>
-        <div className="text-sm block mb-4">
+        <div className="text-sm block mb-4  w-3/4 mx-auto md:w-full">
           <p className="font-medium text-gray-900 ">
             Already Have an Account?{" "}
             <Link to="/login" className="text-blue-600 hover:underline ">
@@ -107,7 +130,7 @@ const Register = () => {
           </p>
         </div>
         {loading || updating ? <Loader></Loader> : ""}
-        {error || updateError ? (
+        {error ? (
           <p className="my-6 text-center text-red-500">
             ERROR : {error?.code} {updateError?.code}
           </p>

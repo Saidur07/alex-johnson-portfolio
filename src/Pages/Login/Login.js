@@ -44,10 +44,12 @@ const Login = () => {
 
   return (
     <div>
-      <h1 className="text-5xl text-center my-8 text-gray-700">HEY! LOGIN!!</h1>
-      <hr className="container mx-auto w-1/4" />
-      <form onSubmit={handleSubmit} className="container mx-auto w-1/4 mt-8">
-        <div className="mb-6">
+      <h1 className="md:text-5xl text-3xl text-center my-8 text-gray-700">
+        HEY! LOGIN!!
+      </h1>
+      <hr className="container mx-auto w-1/2 md:w-1/4" />
+      <form onSubmit={handleSubmit} className="container mx-auto md:w-1/4 mt-8">
+        <div className="mb-6 w-3/4 mx-auto md:w-full">
           <label
             htmlFor="email"
             className="block mb-2 text-sm font-medium text-gray-900"
@@ -58,11 +60,11 @@ const Login = () => {
             ref={emailRef}
             type="email"
             id="email"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 "
             required
           />
         </div>
-        <div className="mb-6">
+        <div className="mb-6 w-3/4 mx-auto md:w-full">
           <label
             htmlFor="password"
             className="block mb-2 text-sm font-medium text-gray-900"
@@ -73,12 +75,12 @@ const Login = () => {
             ref={passwordRef}
             type="password"
             id="password"
-            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 "
+            className="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2.5 "
             required
           />
         </div>
 
-        <div className="text-sm block mb-4">
+        <div className="text-sm block mb-4 w-3/4 mx-auto md:w-full">
           <p className="font-medium text-gray-900 ">
             Don't Have an Account?{" "}
             <Link to="/register" className="text-blue-600 hover:underline ">
