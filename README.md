@@ -6,11 +6,11 @@ Live site Link [https://alex-johnson-portfolio.web.app/](https://alex-johnson-po
 
 In the website, you can see:
 
-- Home Page : You can see 5 sections here(Navbar, Header, Services, Achievements and Footer)
+- Home Page : You can see 5 sections here(Navbar, Header, Services, Skills and Footer)
 
 - Services : Here you can see the services that Mr. Alex Johnson provides. You can also buy his courses by clicking the button
 
-- Achivements : Here you will find the achievements that Alex Johnson earned in his Teaching Career
+- Skills : Here you will find the skills that of Alex Johnson
 
 - Login Page : You can login with your Email and password , Google , Github or Facebook
 
@@ -20,4 +20,6 @@ In the website, you can see:
 
 - `React.js`
 
--
+- `Firebase`
+
+- `Tailwind css` , `DaisyUi` and `Flowbite`
