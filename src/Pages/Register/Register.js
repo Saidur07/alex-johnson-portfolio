@@ -36,11 +36,10 @@ const Register = () => {
     await updateProfile({ displayName: name });
     toast.success("Verfication email Sent!");
     toast.info(
-      "Go to your Gmail, then click on the link of the email that we sent to you. then login"
+      "Go to your Gmail, then click on the link of the email that we sent to you"
     );
 
-    navigate("/login");
-    // navigate(from, { replace: true });
+    navigate(from, { replace: true });
   };
 
   if (user) {

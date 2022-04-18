@@ -17,7 +17,6 @@ const Navbar = () => {
     { id: 5, name: "About", to: "/about" },
   ];
   const [user] = useAuthState(auth);
-  console.log(user);
   const handleSignOut = () => {
     signOut(auth);
   };
