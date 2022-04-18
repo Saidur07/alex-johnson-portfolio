@@ -12,9 +12,8 @@ const Navbar = () => {
   const navigation = [
     { id: 1, name: "Home", to: "/" },
     { id: 2, name: "Services", to: "/services" },
-    { id: 3, name: "Checkout", to: "/checkout" },
-    { id: 4, name: "Blogs", to: "/blogs" },
-    { id: 5, name: "About", to: "/about" },
+    { id: 3, name: "Blogs", to: "/blogs" },
+    { id: 4, name: "About", to: "/about" },
   ];
   const [user] = useAuthState(auth);
   const handleSignOut = () => {

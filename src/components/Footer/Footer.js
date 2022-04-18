@@ -5,14 +5,13 @@ const Footer = () => {
   const navigation = [
     { id: 1, name: "Home", to: "/" },
     { id: 2, name: "Services", to: "/services" },
-    { id: 3, name: "Checkout", to: "/checkout" },
-    { id: 4, name: "Blogs", to: "/blogs" },
-    { id: 5, name: "About", to: "/about" },
+    { id: 3, name: "Blogs", to: "/blogs" },
+    { id: 4, name: "About", to: "/about" },
   ];
   return (
     <div>
       <footer className="footer footer-center p-10 bg-indigo-50 text-base-content rounded  md:mt-12">
-        <div className="grid grid-cols-3 gap-4 sm:grid-flow-col">
+        <div className="grid grid-cols-4 gap-4 sm:grid-flow-col">
           {navigation.map((nav) => (
             <Link
               key={nav.id}
